@@ -9,7 +9,7 @@ const Country = (props) => {
   const actualRef = useRef(null);
 
   const scrollHandler = () => {
-    actualRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    actualRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Country = (props) => {
 
   return (
     <div ref={actualRef} className={`country-container ${classNameHighlight}`}>
-      <h1>{countryName}</h1>
+      <h2>{countryName}</h2>
     </div>
   );
 };

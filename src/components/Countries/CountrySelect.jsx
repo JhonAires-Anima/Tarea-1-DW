@@ -15,7 +15,7 @@ const CountrySelect = (props) => {
     <label className='country-select'>
       <select onChange={selectCountryHandler}>
         <option defaultValue hidden>
-          Countries
+          Search
         </option>
         <SelectOptions countries={countries} />
       </select>
